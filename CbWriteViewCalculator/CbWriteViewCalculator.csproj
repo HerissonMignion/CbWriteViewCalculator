@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D284768-4BA9-4629-B4C0-79BC3E38B217}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CbWriteViewCalculator</RootNamespace>
+    <AssemblyName>CbWriteViewCalculator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompileContext.cs" />
+    <Compile Include="EQoAbsolute.cs" />
+    <Compile Include="EQoBinominalCoef.cs" />
+    <Compile Include="EQoExponent.cs" />
+    <Compile Include="EQoFactorial.cs" />
+    <Compile Include="EQoIntegral.cs" />
+    <Compile Include="EQoMiscFunction.cs" />
+    <Compile Include="EQoPiProduct.cs" />
+    <Compile Include="EQoRootN.cs" />
+    <Compile Include="EQoSigmaSummation.cs" />
+    <Compile Include="EQoSquareRoot.cs" />
+    <Compile Include="EQoTrigFunction.cs" />
+    <Compile Include="EQoUserFunction.cs" />
+    <Compile Include="EQoVariable.cs" />
+    <Compile Include="FormFonctionEditer.cs" />
+    <Compile Include="FormGetFonctionName.cs" />
+    <Compile Include="FormIntegralParam.cs" />
+    <Compile Include="FormShowAskText.cs" />
+    <Compile Include="FormVariableEditer.cs" />
+    <Compile Include="GraphingCalculator\cbgcEventArgs.cs" />
+    <Compile Include="GraphingCalculator\DrawFunction.cs" />
+    <Compile Include="GraphingCalculator\FormDrawFunctionEditer.cs" />
+    <Compile Include="GraphingCalculator\FormGraphingCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphingCalculator\FormGraphingCalculator.Designer.cs">
+      <DependentUpon>FormGraphingCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphingCalculator\PointD.cs" />
+    <Compile Include="GraphingCalculator\uiDrawFunction.cs" />
+    <Compile Include="GraphingCalculator\uiVirtualContextViewer.cs" />
+    <Compile Include="GraphingCalculator\VirtualContext.cs" />
+    <Compile Include="oCalculContextEditer.cs" />
+    <Compile Include="wvRightClick3.cs" />
+    <Compile Include="panelEQoIntegralEdit.cs" />
+    <Compile Include="panelEQoPiProductEdit.cs" />
+    <Compile Include="panelEQoSigmaSummationEdit.cs" />
+    <Compile Include="panelEQoUserFunctionEdit.cs" />
+    <Compile Include="panelEQoVariableEdit.cs" />
+    <Compile Include="wvCbButton2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cWriteViewAssets.cs" />
+    <Compile Include="EQoFraction.cs" />
+    <Compile Include="EQoNumber.cs" />
+    <Compile Include="EQoOperator.cs" />
+    <Compile Include="EQoParenthese.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wvNumberBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oEquation.cs" />
+    <Compile Include="oEquationCalculContext.cs" />
+    <Compile Include="oEquationDrawContext.cs" />
+    <Compile Include="oEquationEditer.cs" />
+    <Compile Include="oEquationObject.cs" />
+    <Compile Include="wvRightClick2.cs" />
+    <Compile Include="panelEQoNumberEdit.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sEquationObjectAndEquation.cs" />
+    <Compile Include="sEquationResult.cs" />
+    <Compile Include="wvStringReader.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphingCalculator\FormGraphingCalculator.resx">
+      <DependentUpon>FormGraphingCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgEmptyEquation.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSymOppAdd.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSymOppDiv.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSymOppSub.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSymOppMulDot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSymOppMul.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
