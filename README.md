@@ -4,3 +4,7 @@ This is old code from when i was a teenager. Please do not judge me too harshly 
 
 
 
+![calculator screenshot](https://raw.githubusercontent.com/HerissonMignion/CbWriteViewCalculator/main/readmeassets/calculatrice.png)
+
+
+
